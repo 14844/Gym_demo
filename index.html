@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-en="IRON PULSE — Premium Gym">IRON PULSE — جيم بريميوم</title>
+  <meta name="description" content="IRON PULSE — صالة رياضية بريميوم: تدريب شخصي، كلاسات جماعية، وأحدث الأجهزة.">
+  <meta name="theme-color" content="#07080b">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="loader"><div><div class="loader__logo">IRON <em>PULSE</em></div><div class="loader__bar"></div></div></div>
+  <div class="page-wipe"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav">
+    <div class="container">
+      <nav class="nav__inner">
+        <a href="index.html" class="logo" aria-label="IRON PULSE"><img src="assets/logo.svg" alt="IRON PULSE logo"><span>IRON <em>PULSE</em></span></a>
+        <ul class="nav__links">
+          <li><a href="index.html" class="active" data-en="Home">الرئيسية</a></li>
+          <li><a href="programs.html" data-en="Programs">البرامج</a></li>
+          <li><a href="programs.html#trainers" data-en="Trainers">المدربين</a></li>
+          <li><a href="programs.html#pricing" data-en="Pricing">الأسعار</a></li>
+          <li><a href="contact.html" data-en="Contact">تواصل معنا</a></li>
+        </ul>
+        <div class="nav__actions">
+          <button class="lang-toggle" type="button" aria-label="Switch to English">EN</button>
+          <a href="contact.html#join" class="btn btn--primary btn--sm" data-en="Join Now">اشترك الآن</a>
+          <button class="burger" type="button" aria-label="Menu"><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO (3D) ================= -->
+    <section class="hero">
+      <div class="hero__bg" data-speed="0.3" style="background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=70')"></div>
+      <canvas id="hero3d" aria-hidden="true"></canvas>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow reveal" data-en="Premium Fitness Club">نادي لياقة بريميوم</span>
+          <h1 class="h-xl reveal" data-en="Build your <span class='grad'>strongest</span> self">اصنع نسختك <span class="grad">الأقوى</span></h1>
+          <p class="lead reveal" data-en="World-class equipment, certified coaches and programs designed around your goal — from your first workout to your best shape ever.">أحدث الأجهزة، مدربين معتمدين، وبرامج متصممة مخصوص لهدفك — من أول تمرين لحد أحسن شكل وصلت له في حياتك.</p>
+          <div class="hero__cta reveal">
+            <a href="contact.html#join" class="btn btn--primary"><span data-en="Start your free trial">ابدأ تجربتك المجانية</span>
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="programs.html" class="btn btn--ghost" data-en="Explore programs">استكشف البرامج</a>
+          </div>
+          <div class="hero__stats reveal">
+            <div class="stat"><strong><span data-count="2500">0</span><span class="plus">+</span></strong><span data-en="Active members">عضو نشط</span></div>
+            <div class="stat"><strong><span data-count="35">0</span><span class="plus">+</span></strong><span data-en="Certified coaches">مدرب معتمد</span></div>
+            <div class="stat"><strong><span data-count="60">0</span><span class="plus">+</span></strong><span data-en="Weekly classes">كلاس أسبوعيًا</span></div>
+          </div>
+        </div>
+        <div class="hero__space" aria-hidden="true"></div>
+      </div>
+      <div class="hero__badge"><span class="dot"></span><div><b data-en="Open now">مفتوح دلوقتي</b><small data-en="24/7 access for Elite members">دخول 24/7 لأعضاء Elite</small></div></div>
+      <div class="scroll-hint" aria-hidden="true"></div>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>STRENGTH</span><span>CROSSFIT</span><span>BOXING</span><span>HIIT</span><span>YOGA</span><span>CARDIO</span><span>NUTRITION</span>
+        <span>STRENGTH</span><span>CROSSFIT</span><span>BOXING</span><span>HIIT</span><span>YOGA</span><span>CARDIO</span><span>NUTRITION</span>
+      </div>
+    </div>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal" data-en="Why IRON PULSE">ليه IRON PULSE</span>
+          <h2 class="h-lg reveal" data-en="Everything you need <span class='text-brand'>under one roof</span>">كل اللي محتاجه <span class="text-brand">في مكان واحد</span></h2>
+          <p class="lead reveal" data-en="A complete experience designed to keep you motivated and get you real results.">تجربة متكاملة متصممة عشان تفضل متحمس وتوصل لنتايج حقيقية.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="glass tilt reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5v11M17.5 6.5v11M3 9v6M21 9v6M6.5 12h11"/></svg></div>
+            <h3 class="h-md" data-en="Pro equipment">أجهزة احترافية</h3>
+            <p data-en="Latest Technogym & Hammer Strength machines across 1,500 m².">أحدث أجهزة Technogym و Hammer Strength على مساحة 1500 م².</p>
+          </article>
+          <article class="glass tilt reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg></div>
+            <h3 class="h-md" data-en="Personal coaching">تدريب شخصي</h3>
+            <p data-en="Certified coaches build a plan around your body and goal.">مدربين معتمدين بيعملولك خطة على مقاس جسمك وهدفك.</p>
+          </article>
+          <article class="glass tilt reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c3 4 6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 3-7 6-11z"/></svg></div>
+            <h3 class="h-md" data-en="Nutrition plans">خطط تغذية</h3>
+            <p data-en="Meal plans by a sports nutritionist, updated monthly.">أنظمة أكل من أخصائي تغذية رياضية، بتتحدث كل شهر.</p>
+          </article>
+          <article class="glass tilt reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <h3 class="h-md" data-en="Open 24/7">مفتوح 24/7</h3>
+            <p data-en="Train on your schedule — day or night, all week long.">اتمرن في الوقت اللي يناسبك — بالليل أو بالنهار، طول الأسبوع.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section section--alt">
+      <div class="container split">
+        <div class="media-stack reveal">
+          <div class="m1"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=70" alt="متدربة بترفع أوزان في الجيم" loading="lazy"></div>
+          <div class="m2"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=70" alt="رجل بيتمرن بالأثقال" loading="lazy"></div>
+          <div class="exp"><b>12</b><span data-en="Years of results">سنة نتايج</span></div>
+        </div>
+        <div>
+          <span class="eyebrow reveal" data-en="About us">عن النادي</span>
+          <h2 class="h-lg reveal" data-en="More than a gym — <span class='grad'>a community</span>">أكتر من جيم — <span class="grad">مجتمع كامل</span></h2>
+          <p class="lead reveal" data-en="Since 2014 we have helped thousands of members transform their bodies and their lifestyle. Here you train with people who push you forward.">من 2014 وإحنا بنساعد آلاف الأعضاء يغيّروا شكل جسمهم وأسلوب حياتهم. هنا هتتمرن وسط ناس بتشدك لقدام.</p>
+          <ul class="checklist reveal">
+            <li data-en="Free body-composition scan (InBody) every month">قياس InBody مجاني كل شهر</li>
+            <li data-en="Separate ladies-only area & classes">منطقة وكلاسات مخصوصة للسيدات</li>
+            <li data-en="Sauna, steam room & recovery zone">ساونا وستيم ومنطقة استشفاء</li>
+            <li data-en="Free parking & healthy café">جراج مجاني وكافيه صحي</li>
+          </ul>
+          <a href="programs.html" class="btn btn--primary reveal" data-en="See our programs">شوف برامجنا</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROGRAMS PREVIEW ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal" data-en="Programs">البرامج</span>
+          <h2 class="h-lg reveal" data-en="Pick your <span class='text-brand'>path</span>">اختار <span class="text-brand">طريقك</span></h2>
+        </div>
+        <div class="grid grid--4">
+          <a href="programs.html" class="img-card tilt reveal">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=70" alt="تمرين قوة بالدامبلز" loading="lazy">
+            <span class="go"><svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M8 7h9v9"/></svg></span>
+            <div class="img-card__body"><span class="tag" data-en="Muscle">عضلات</span><h3 class="h-md" data-en="Strength & Bodybuilding">قوة وكمال أجسام</h3><p data-en="Build size and raw power.">ابني حجم وقوة حقيقية.</p></div>
+          </a>
+          <a href="programs.html" class="img-card tilt reveal">
+            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=700&q=70" alt="كلاس HIIT جماعي" loading="lazy">
+            <span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M8 7h9v9"/></svg></span>
+            <div class="img-card__body"><span class="tag" data-en="Fat burn">حرق دهون</span><h3 class="h-md">HIIT & CrossFit</h3><p data-en="High intensity, maximum burn.">شدة عالية وحرق أقصى.</p></div>
+          </a>
+          <a href="programs.html" class="img-card tilt reveal">
+            <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=700&q=70" alt="ملاكمة" loading="lazy">
+            <span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M8 7h9v9"/></svg></span>
+            <div class="img-card__body"><span class="tag" data-en="Combat">قتالي</span><h3 class="h-md" data-en="Boxing & Kickboxing">ملاكمة وكيك بوكسينج</h3><p data-en="Technique, cardio and confidence.">تكنيك، لياقة، وثقة.</p></div>
+          </a>
+          <a href="programs.html" class="img-card tilt reveal">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=70" alt="يوجا" loading="lazy">
+            <span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M8 7h9v9"/></svg></span>
+            <div class="img-card__body"><span class="tag" data-en="Mobility">مرونة</span><h3 class="h-md" data-en="Yoga & Pilates">يوجا وبيلاتس</h3><p data-en="Flexibility, balance and recovery.">مرونة، توازن، واستشفاء.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BMI ================= -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal" data-en="Free tool">أداة مجانية</span>
+          <h2 class="h-lg reveal" data-en="Calculate your <span class='text-brand'>BMI</span>">احسب مؤشر <span class="text-brand">كتلة جسمك</span></h2>
+          <p class="lead reveal" data-en="Know where you stand and get a program recommendation instantly.">اعرف إنت فين دلوقتي وخد ترشيح لبرنامج يناسبك فورًا.</p>
+        </div>
+        <div class="bmi reveal">
+          <form class="bmi__form" id="bmiForm">
+            <div class="row-2">
+              <div class="field"><label for="bmiH" data-en="Height (cm)">الطول (سم)</label><input class="input" id="bmiH" type="number" min="100" max="250" value="175" required></div>
+              <div class="field"><label for="bmiW" data-en="Weight (kg)">الوزن (كجم)</label><input class="input" id="bmiW" type="number" min="30" max="300" value="82" required></div>
+            </div>
+            <div class="row-2">
+              <div class="field"><label for="bmiA" data-en="Age">السن</label><input class="input" id="bmiA" type="number" min="12" max="90" value="28"></div>
+              <div class="field"><label for="bmiG" data-en="Gender">النوع</label>
+                <select class="input" id="bmiG"><option data-en="Male">ذكر</option><option data-en="Female">أنثى</option></select></div>
+            </div>
+            <button class="btn btn--primary" type="submit" style="width:100%" data-en="Calculate">احسب دلوقتي</button>
+            <p style="color:var(--muted);font-size:.85rem;margin:14px 0 0" data-en="BMI is an indicator only — our coaches do a full InBody scan on your first visit.">المؤشر للاسترشاد بس — المدربين بيعملولك قياس InBody كامل في أول زيارة.</p>
+          </form>
+          <div class="bmi__visual">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=70" alt="رجل بيتمرن" loading="lazy">
+            <div class="bmi__result" aria-live="polite">
+              <div style="display:flex;justify-content:space-between;align-items:end;gap:10px;flex-wrap:wrap">
+                <div><small style="color:var(--muted)" data-en="Your BMI">مؤشرك</small><div class="bmi__value" id="bmiVal">0.0</div></div>
+                <b id="bmiCat" style="font-size:1.1rem"></b>
+              </div>
+              <div class="bmi__bar"><span class="bmi__pin"></span></div>
+              <div class="bmi__scale"><span>15</span><span>18.5</span><span>25</span><span>30</span><span>40</span></div>
+              <p style="margin:12px 0 0;font-weight:600"><span data-en="Recommended:">ترشيحنا:</span> <span id="bmiTip" class="text-brand"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal" data-en="Success stories">قصص نجاح</span>
+          <h2 class="h-lg reveal" data-en="Our members <span class='grad'>say it best</span>">أعضاءنا <span class="grad">بيتكلموا</span></h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="glass testi tilt reveal">
+            <span class="quote-mark">”</span>
+            <div class="stars">★★★★★</div>
+            <blockquote data-en="I lost 18 kg in 5 months. The coaches follow up on every detail, even my meals.">نزلت 18 كيلو في 5 شهور. المدربين متابعين معايا كل تفصيلة حتى الأكل.</blockquote>
+            <div class="person"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=70" alt="أحمد" loading="lazy"><div><b data-en="Ahmed K.">أحمد خالد</b><small data-en="Member for 1 year">عضو من سنة</small></div></div>
+          </article>
+          <article class="glass testi tilt reveal">
+            <span class="quote-mark">”</span>
+            <div class="stars">★★★★★</div>
+            <blockquote data-en="The ladies area is amazing and the classes have a crazy energy. Best gym I've joined.">منطقة السيدات ممتازة والكلاسات طاقتها عالية جدًا. أحسن جيم اشتركت فيه.</blockquote>
+            <div class="person"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=70" alt="سارة" loading="lazy"><div><b data-en="Sara M.">سارة محمود</b><small data-en="Pilates member">عضوة بيلاتس</small></div></div>
+          </article>
+          <article class="glass testi tilt reveal">
+            <span class="quote-mark">”</span>
+            <div class="stars">★★★★★</div>
+            <blockquote data-en="Clean, professional and open 24/7. I train after work at midnight with no crowd.">نضيف ومحترم ومفتوح 24 ساعة. بتمرن بعد الشغل الساعة 12 بالليل من غير زحمة.</blockquote>
+            <div class="person"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=70" alt="عمر" loading="lazy"><div><b data-en="Omar H.">عمر حسن</b><small data-en="Elite member">عضو Elite</small></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1600&q=70" alt="" loading="lazy">
+          <div>
+            <h2 class="h-lg" data-en="Your first week is on us">أول أسبوع علينا</h2>
+            <p data-en="Book a free trial today — no commitment, no hidden fees.">احجز تجربتك المجانية النهارده — من غير التزام ولا رسوم مخفية.</p>
+          </div>
+          <a href="contact.html#join" class="btn" data-en="Join Now">اشترك الآن</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="logo"><img src="assets/logo.svg" alt="IRON PULSE logo"><span>IRON <em>PULSE</em></span></a>
+          <p data-en="A premium fitness club built to help you become your strongest self.">نادي لياقة بريميوم متصمم عشان يساعدك توصل لأقوى نسخة منك.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.4 2.4 2 4 4.5 4.2v3.3c-1.7 0-3.2-.5-4.5-1.4V15a6 6 0 1 1-6-6v3.4a2.7 2.7 0 1 0 2.6 2.6V3H16z"/></svg></a>
+          </div>
+        </div>
+        <div><h4 data-en="Pages">الصفحات</h4><ul><li><a href="index.html" data-en="Home">الرئيسية</a></li><li><a href="programs.html" data-en="Programs">البرامج</a></li><li><a href="programs.html#pricing" data-en="Pricing">الأسعار</a></li><li><a href="contact.html" data-en="Contact">تواصل معنا</a></li></ul></div>
+        <div><h4 data-en="Hours">المواعيد</h4><ul><li data-en="Sat – Thu: 6 AM – 1 AM">السبت – الخميس: 6ص – 1ص</li><li data-en="Friday: 2 PM – 11 PM">الجمعة: 2م – 11م</li><li data-en="Elite: 24/7">Elite: طول اليوم</li></ul></div>
+        <div>
+          <h4 data-en="Newsletter">النشرة البريدية</h4>
+          <p data-en="Tips, offers and new classes in your inbox.">نصايح، عروض، وكلاسات جديدة على إيميلك.</p>
+          <form class="newsletter"><input class="input" type="email" required placeholder="email@example.com" aria-label="Email"><button class="btn btn--primary btn--sm" data-en="Join">اشترك</button></form>
+        </div>
+      </div>
+      <div class="footer__bottom"><span>© <span class="year"></span> IRON PULSE. <span data-en="All rights reserved.">جميع الحقوق محفوظة.</span></span><span data-en="Cairo, Egypt">القاهرة، مصر</span></div>
+    </div>
+  </footer>
+
+  <a class="fab" href="https://wa.me/201000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.4z"/></svg></a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/hero3d.js"></script>
+</body>
+</html>
